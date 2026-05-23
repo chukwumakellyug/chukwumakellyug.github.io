@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Sent - Chukwuma Kelly Ugochukwu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --gold: #C9A84C;
+      --dark: #080808;
+      --dark2: #0F0F0F;
+      --text: #F0EDE6;
+      --cyber: #00FFB2;
+    }
+    
+    html { scroll-behavior: smooth; }
+    body { 
+      background: var(--dark); 
+      color: var(--text); 
+      font-family: 'Outfit', sans-serif; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container { 
+      text-align: center;
+      background: var(--dark2);
+      border: 1px solid rgba(201, 168, 76, 0.18);
+      padding: 60px 40px;
+      border-radius: 8px;
+      max-width: 600px;
+      animation: fadeIn 0.8s ease-in;
+    }
+    
+    .success-icon {
+      font-size: 80px;
+      margin-bottom: 30px;
+      color: var(--cyber);
+      animation: scaleIn 0.6s ease-out;
+    }
+    
+    h1 { 
+      color: var(--gold); 
+      margin-bottom: 20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+    }
+    
+    p { 
+      color: var(--text);
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    
+    .highlight {
+      color: var(--cyber);
+      font-weight: 500;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 32px;
+      background: var(--gold);
+      color: var(--dark);
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    
+    .back-link:hover {
+      background: #E8C96A;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(201, 168, 76, 0.25);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes scaleIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="success-icon">✓</div>
+    
+    <h1>Message Sent!</h1>
+    
+    <p>Thank you for reaching out!</p>
+    
+    <p>Your message has been received successfully. I appreciate you taking the time to get in touch with me.</p>
+    
+    <p>I'll review your message and get back to you <span class="highlight">as soon as possible</span>.</p>
+    
+    <p style="margin-top: 40px; font-size: 14px; color: #9A9790;">
+      In the meantime, feel free to connect with me on LinkedIn or check out my GitHub projects.
+    </p>
+    
+    <a href="/" class="back-link">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
