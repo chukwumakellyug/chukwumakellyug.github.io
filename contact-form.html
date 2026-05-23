@@ -1,0 +1,83 @@
+<!-- Contact Form with FormSubmit.co Integration -->
+<!-- Add this to your index.html in the contact section -->
+
+<section id="contact" class="sw bg2">
+  <div class="contact-grid">
+    <!-- Left Column: Contact Form -->
+    <div>
+      <div class="slabel">
+        <div class="slabel-line"></div>
+        <span class="slabel-txt">Get In Touch</span>
+      </div>
+      <h2 class="stitle">Let's <em>Connect</em></h2>
+      <p class="csub">Have a question or want to collaborate? Send me a message and I'll get back to you as soon as possible.</p>
+      
+      <form action="https://formsubmit.co/chukwumakellyug@gmail.com" method="POST" class="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+        </div>
+        
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+
+        <!-- FormSubmit Hidden Fields (Optional but recommended) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://chukwumakellyug.github.io/thank-you.html">
+        
+        <button type="submit" class="btn-g">Send Message</button>
+      </form>
+      
+      <div class="form-success" id="form-success" style="display:none; margin-top: 20px;">
+        ✓ Message sent successfully! I'll be in touch soon.
+      </div>
+    </div>
+
+    <!-- Right Column: Contact Info -->
+    <div>
+      <div class="cbox">
+        <div class="crow">
+          <div class="ckey">Email</div>
+          <div class="cval"><a href="mailto:chukwumakellyug@gmail.com">chukwumakellyug@gmail.com</a></div>
+        </div>
+        <div class="crow">
+          <div class="ckey">Phone</div>
+          <div class="cval"><a href="tel:+2349030413680">+234 903 041 3680</a></div>
+        </div>
+        <div class="crow">
+          <div class="ckey">Location</div>
+          <div class="cval">Ndokwa East, Delta State, Nigeria</div>
+        </div>
+        <div class="crow">
+          <div class="ckey">Social</div>
+          <div class="social-links">
+            <a href="https://linkedin.com" class="slink" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" class="slink" target="_blank">Twitter</a>
+            <a href="https://github.com/chukwumakellyug" class="slink" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Optional: Handle form submission feedback
+  document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+    // FormSubmit will handle the submission
+    // You can add custom logic here if needed
+  });
+</script>
